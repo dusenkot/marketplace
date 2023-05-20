@@ -33,15 +33,15 @@ function About() {
 
 const styles = {
   container: {
-    
-    backgroundColor: '#263238',
+    background: 'linear-gradient(to bottom right, #005c98, #005c98 0%, #003261 0%, #005c98 75%)',
     color: '#ffffff',
     padding: '20px',
     textAlign: 'left',
   },
   aboutus:{
+    marginLeft:"40px",
     color:"#848482",
-    width:"700px",
+    width:"800px",
     marginTop:"30px",
     marginBotton:"80px",
     fontSize:"25px"
