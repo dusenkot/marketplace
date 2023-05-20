@@ -26,16 +26,12 @@ const SearchPeople = () => {
   return (
     
     <div style={styles.body}>
-      <App />
       <header style={styles.header}>
     <div style={styles.left}>
       <img src={logo} alt="Logo" style={styles.logo} />
     </div>
     <div style={styles.middle}>
-      <button style={styles.button}><span onClick={() => navigateTo('/about')}>About</span></button>
-      <button style={styles.button}><span onClick={() => navigateTo('/profile')}>Profile</span></button>
-      <button style={styles.button}><span onClick={() => navigateTo('/serchpeope')}>Wyszukaj</span></button>
-
+      <App />
     </div>
   </header>
       <div style = {styles.div1}>
@@ -58,10 +54,9 @@ const SearchPeople = () => {
   );
 };
 const styles = {
-body:{
-  backgroundColor:"skyblue",
-  height: "100%",
-  
+  body: {
+    background: 'linear-gradient(to bottom right, #005c98, #005c98 0%, #003261 0%, #005c98 75%)',
+    minHeight: '100vh',
 },
 serch:{
   marginLeft:"48%",
