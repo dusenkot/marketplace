@@ -51,7 +51,7 @@ const StartupIdeas = () => {
   ];
 
   return (
-    <div>
+    <div style={styles.background}>
       <App />
       {ideas.map((idea, index) => (
         <div key={index} style={styles.idea}>
