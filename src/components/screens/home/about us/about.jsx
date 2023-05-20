@@ -1,16 +1,20 @@
 import React from 'react';
 import profile from './a22.jpg';
 import bgimage_prof from './a23.png';
-import bg from './12.jpeg'
+import bg from './12.jpeg';
+import line from './linia.png';
 function About() {
   return (
     <div style={styles.container}>
+        <img src = {line} style = {styles.line}></img>
       <h1 style={styles.heading}>Your Future - </h1>
       <p style={styles.heading1}>starts here</p>
       <p style = {styles.aboutus}>The product consists of buying and selling start-ups, has potential expansion opportunities in the areas of hiring workers, 
         selling finished products. Product users are divided into 2 categories: investors and startups. Investors will have access to
          the list of "offers", the "offer" consists of: the name of the startup, a link to the profile in the form of a start-up name,
           a short description of its startup.</p>
+          
+          <hr style = {styles.linia}></hr>
       <p style={styles.text}>Why should you choose us?</p>
       <p style={styles.text_main}>
         So, we have user-friendly interface, convenience and security, smart communication, quality feedback, development and improvement of the platform
@@ -38,7 +42,13 @@ const styles = {
     padding: '20px',
     textAlign: 'left',
   },
+  line:{
+    float:"right",
+    height:'1160px',
+    width:'450px%'
+  },
   aboutus:{
+    textShadow:"1px 1px 1px pink",
     marginLeft:"40px",
     color:"#848482",
     width:"800px",
@@ -63,18 +73,23 @@ const styles = {
     marginLeft: '340px',
     marginTop: '0px',
   },
+  linia:{
+    marginRight:"500px",
+    width:"70%"
+  },
   text: {
     marginTop:"100px",
     paddingLeft: '15px',
     fontSize: '30px',
   },
   text_main: {
+    textShadow:"1px 1px 1px pink",
     color: "gray",
     fontSize: '22px',
     width: "500px"
   },
   users_proposals: {
-    marginLeft: '37%',
+    marginLeft: '34%',
     fontSize: '34px',
   },
 
@@ -102,7 +117,7 @@ const styles = {
     width:"300px",
     height:"100px",
     marginLeft:"70px",
-    marginRight:"250px",
+    marginRight:"220px",
     backgroundImage:`url(${bgimage_prof})`,
     backgroundSize: "cover",
     backgroundPosition:"center",
@@ -111,20 +126,20 @@ const styles = {
   image3:{
     width:"300px",
     height:"100px",
-    marginLeft:"230px",
+    marginLeft:"130px",
   },
 addinf1:{
-    marginLeft:"130px",
+    marginLeft:"180px",
     width:"200px",
     textAlign: "center"
 },
 addinf2:{
-    marginLeft:"290px",
+    marginLeft:"320px",
     width:"200px",
     textAlign: "center"
 },
 addinf3:{
-    marginLeft:"300px",
+    marginLeft:"290px",
     width:"200px",
     textAlign: "center"
 },
