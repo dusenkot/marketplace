@@ -1,5 +1,4 @@
 import React from 'react';
-import styles from './sign_up.module.css'
 
 function SignUp() {
 
@@ -25,5 +24,38 @@ function SignUp() {
     </form>
   );
 };
+const styles = {
+  form: {
+    backgroundColor: '#263238',
+    color: '#ffffff',
+    padding: '20px',
+    borderRadius: '5px',
+    width: '30%',
+    maxWidth: '400px',
+    marginLeft: '35%',
+    margin: '0 auto',
+},
+label: {
+    display: 'block',
+    marginBottom: '8px',
+},
+input: {
+    width: '95%',
+    padding: '10px',
+    border: '1px solid #78909c',
+    borderRadius: '3px',
+    marginBottom: '15px',
+    color: '#ffffff',
+    backgroundColor: '#37474f',
+},
+submitButton: {
+    backgroundColor: '#1976d2',
+    color: '#ffffff',
+    padding: '10px 20px',
+    border: 'none',
+    borderRadius: '3px',
+    cursor: 'pointer',
+},
+}
 
 export default SignUp;

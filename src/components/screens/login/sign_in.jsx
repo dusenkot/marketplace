@@ -1,5 +1,4 @@
 import React from 'react';
-import styles from './sign_in.module.css'
 
 function SignIn(){
 
@@ -21,6 +20,44 @@ function SignIn(){
           </form>
         </div>
       );
-};
+  };
+  const styles = {
+    container: {
+      backgroundColor: '#263238',
+      color: '#ffffff',
+      padding: '20px',
+      borderRadius: '5px',
+      maxWidth: '400px',
+      margin: '0 auto',
+    },
+    heading: {
+      textAlign: 'center',
+      marginBottom: '20px',
+    },
+    form: {
+      display: 'flex',
+      flexDirection: 'column',
+    },
+    label: {
+      marginBottom: '8px',
+    },
+    input: {
+      padding: '10px',
+      border: '1px solid #78909c',
+      borderRadius: '3px',
+      marginBottom: '15px',
+      color: '#ffffff',
+      backgroundColor: '#37474f',
+    },
+    submitButton: {
+      backgroundColor: '#1976d2',
+      color: '#ffffff',
+      padding: '10px 20px',
+      border: 'none',
+      borderRadius: '3px',
+      cursor: 'pointer',
+    },
+  };
+
         
-    export default SignIn;
+export default SignIn;
