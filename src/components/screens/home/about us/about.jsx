@@ -117,7 +117,7 @@ const styles = {
     width:"300px",
     height:"100px",
     marginLeft:"70px",
-    marginRight:"250px",
+    marginRight:"220px",
     backgroundImage:`url(${bgimage_prof})`,
     backgroundSize: "cover",
     backgroundPosition:"center",
@@ -126,20 +126,20 @@ const styles = {
   image3:{
     width:"300px",
     height:"100px",
-    marginLeft:"230px",
+    marginLeft:"130px",
   },
 addinf1:{
-    marginLeft:"130px",
+    marginLeft:"180px",
     width:"200px",
     textAlign: "center"
 },
 addinf2:{
-    marginLeft:"290px",
+    marginLeft:"320px",
     width:"200px",
     textAlign: "center"
 },
 addinf3:{
-    marginLeft:"300px",
+    marginLeft:"290px",
     width:"200px",
     textAlign: "center"
 },
