@@ -1,3 +1,4 @@
+import CreateFormStartup from './ create-form-startup/CreateFormStartup'
 import style from './Home.module.css'
 
 function Home() {
@@ -10,6 +11,7 @@ function Home() {
         <h2>car1</h2>
         <p>100 000$</p>
         <button>read more</button>
+        <CreateFormStartup />
         </div>
     </div>
   </div>
