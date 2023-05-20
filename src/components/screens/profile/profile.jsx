@@ -1,13 +1,19 @@
 import React from 'react';
 import style from './profile.css'
+import image from  './pic.png'
+import image2 from  './default.jpg'
 
 function Profile(){
     return(
-        <div style={style.t} >
+        <div >
             <div>
         <h1>Profile</h1>
         <div id="pl" style={style.pl}>
-            <img src="default.jpg" style={style.img}/>
+            <div id="wsp">
+                <img src={image2} style={style.img} id="prof"/>
+                <img src={image} style={style.img} id="back"/>
+            </div>
+            
             <form >
                 <input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg"/>
             </form>
@@ -27,5 +33,6 @@ function Profile(){
 
     )
 }
+
 
 export default Profile

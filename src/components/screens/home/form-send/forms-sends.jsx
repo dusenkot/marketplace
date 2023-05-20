@@ -9,6 +9,8 @@ const FormSends = () => {
     <div>
       <span onClick={() => navigateTo('/about')}>About</span>
       <span onClick={() => navigateTo('/profile')}>Profile</span>
+      <span onClick={() => navigateTo('/sign_up')}>Register</span>
+      <span onClick={() => navigateTo('/sign_in')}>Login</span>
     </div>
     
   );

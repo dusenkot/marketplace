@@ -1,3 +1,19 @@
+
+#wsp{
+    position:relative;
+    width:300px;
+    height:225px;
+}
+#prof{
+    position:relative;
+    height:100px;
+    width:100px;
+}
+#back{
+    position:absolute;
+    width:500px;
+    height:100px;
+}
 #pl{
     margin-top:60px;
     margin-left:20px;
@@ -25,13 +41,10 @@
     float:left;
 }
     
-t{
+#t{
     background-color: rgb(61, 61, 237);
 }
-img{
-    height:100px;
-    width:100px;
-}
+
 #text{
     height:150px;
     width:750px;

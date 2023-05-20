@@ -1,10 +1,11 @@
-import styles from './sign_up.css'
+import React from 'react';
 
-function sing_up() {
+
+function SignUp() {
 
   return (
-    
-    <form style={styles.form}>
+    <div style={styles.background}>
+      <form style={styles.form}>
       <label htmlFor="name" style={styles.label}>Name:</label>
       <input type="text" id="name" name="name" required style={styles.input} />
 
@@ -22,7 +23,46 @@ function sing_up() {
 
       <input type="submit" value="Submit" style={styles.submitButton} />
     </form>
+    </div>
+
   );
 };
+const styles = {
+  background: {
+    background: 'linear-gradient(to bottom right, #005c98, #005c98 0%, #003261 0%, #005c98 75%)',
+    minHeight: '100vh',
+  },
+  form: {
+    backgroundColor: '#263238',
+    color: '#ffffff',
+    padding: '20px',
+    borderRadius: '5px',
+    width: '30%',
+    maxWidth: '400px',
+    marginLeft: '35%',
+    margin: '0 auto',
+},
+  label: {
+    display: 'block',
+    marginBottom: '8px',
+},
+  input: {
+    width: '95%',
+    padding: '10px',
+    border: '1px solid #78909c',
+    borderRadius: '3px',
+    marginBottom: '15px',
+    color: '#ffffff',
+    backgroundColor: '#37474f',
+},
+  submitButton: {
+    backgroundColor: '#1976d2',
+    color: '#ffffff',
+    padding: '10px 20px',
+    border: 'none',
+    borderRadius: '3px',
+    cursor: 'pointer',
+},
+}
 
-export default sing_up
+export default SignUp;
