@@ -1,7 +1,9 @@
+import React from 'react';
+
 function Profile(){
     return(
         <div>
-            <h1>Staro mordo</h1>
+            <h1>Hej</h1>
         </div>
 
     )
