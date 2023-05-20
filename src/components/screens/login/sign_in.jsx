@@ -3,7 +3,8 @@ import React from 'react';
 function SignIn(){
 
     return (
-        <div style={styles.container}>
+      <div style={styles.background}>
+      <div style={styles.container}>
           <h2 style={styles.heading}>Sign In</h2>
           <form style={styles.form}>
             <label htmlFor="email" style={styles.label}>
@@ -19,9 +20,14 @@ function SignIn(){
             <input type="submit" value="Sign In" style={styles.submitButton} />
           </form>
         </div>
+        </div>
       );
   };
   const styles = {
+    background: {
+      background: 'linear-gradient(to bottom right, #005c98, #005c98 0%, #003261 0%, #005c98 75%)',
+      minHeight: '100vh',
+    },
     container: {
       backgroundColor: '#263238',
       color: '#ffffff',
