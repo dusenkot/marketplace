@@ -74,7 +74,7 @@ const styles = {
     minHeight: '100vh',
   },
   idea: {
-    backgroundColor: '#0FE0EB',
+    backgroundColor: '#64b5f6',
     color: '#ffffff',
     padding: '20px',
     marginBottom: '10px',
