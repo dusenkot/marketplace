@@ -7,18 +7,21 @@ function Profile(){
     return(
         <div >
             <div>
-        <h1>Profile</h1>
-        <div id="pl" style={style.pl}>
-            <div id="wsp">
-                <img src={image2} style={style.img} id="prof"/>
-                <img src={image} style={style.img} id="back"/>
+                <div id="wsp">
+                    <div id="yor">The start-uppers profile</div>
+                    <img src={image2} style={style.img} id="prof"/>
+                    <img src={image} style={style.img} id="back"/>
+                
             </div>
-            
+        <div id="pl" style={style.pl}>
+            <h4 id="p">Name and Surname</h4>
             <form >
-                <input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg"/>
+                <input type="file"  id="avatar"  name="avatar" accept="image/png, image/jpeg"/>
+               
             </form>
             
-            <h4 id="p">Name and Surname</h4>
+            
+            <button>Contact with me</button>
         </div>
         <div id="pr" style={style.pr}>
             <h2>Description of the start-up</h2>
