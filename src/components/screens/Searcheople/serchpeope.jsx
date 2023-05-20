@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import App from '../home/form-send/forms-sends';
 import logo from './logo.png'
 // Маленька база даних з людьми
 const peopleData = [
@@ -23,7 +24,9 @@ const SearchPeople = () => {
   };
 
   return (
+    
     <div style={styles.body}>
+      <App />
       <header style={styles.header}>
     <div style={styles.left}>
       <img src={logo} alt="Logo" style={styles.logo} />
