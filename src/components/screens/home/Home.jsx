@@ -52,21 +52,54 @@ const StartupIdeas = () => {
 
   return (
     <div>
-      <App />
       {ideas.map((idea, index) => (
-        <div key={index}>
-          <h2>{idea.name}</h2>
-          <p>{idea.description}</p>
-          <p>Short Description: {idea.shortDescription}</p>
-          <p>Team: {idea.team}</p>
-          <p>Create Date: {idea.createDate}</p>
-          <p>End User Price: {idea.endUserPrice}</p>
-          <p>Estimated Finish Date: {idea.estimatedFinishDate}</p>
-          <hr />
+        <div key={index} style={styles.idea}>
+          <h2 style={styles.name}>{idea.name}</h2>
+          <p style={styles.description}>{idea.description}</p>
+          <p style={styles.shortDescription}>{idea.shortDescription}</p>
+          <p style={styles.team}>{idea.team}</p>
+          <p style={styles.createDate}>Created: {idea.createDate}</p>
+          <p style={styles.endUserPrice}>End User Price: {idea.endUserPrice}</p>
+          <p style={styles.estimatedFinishDate}>Estimated Finish Date: {idea.estimatedFinishDate}</p>
         </div>
       ))}
     </div>
   );
 };
+
+const styles = {
+  idea: {
+    backgroundColor: '#212121',
+    color: '#ffffff',
+    padding: '20px',
+    marginBottom: '20px',
+  },
+  name: {
+    fontSize: '24px',
+    marginBottom: '10px',
+  },
+  description: {
+    marginBottom: '10px',
+  },
+  shortDescription: {
+    fontWeight: 'bold',
+    marginBottom: '10px',
+  },
+  team: {
+    marginBottom: '10px',
+  },
+  createDate: {
+    fontStyle: 'italic',
+    marginBottom: '10px',
+  },
+  endUserPrice: {
+    marginBottom: '10px',
+  },
+  estimatedFinishDate: {
+    marginBottom: '10px',
+  },
+};
+
+
 
 export default StartupIdeas;
