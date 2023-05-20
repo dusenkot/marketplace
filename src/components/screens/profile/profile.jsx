@@ -8,12 +8,9 @@ function Profile(){
         <div >
             <div>
                 <div id="wsp">
-                    <div id="yor">The start-uppers profile</div>
                     <img src={image2} style={style.img} id="prof"/>
-                    <div>
                         <img src={image} style={style.img} id="back"/>
-                        <p>Profile of start-upper</p>
-                    </div>
+                        <p id="profil">Profile of start-upper</p>
                     
                 
             </div>
