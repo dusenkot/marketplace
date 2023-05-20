@@ -17,6 +17,7 @@ function Routes(){
       <Route path='/about' element={ <About/>}/>
       <Route path='/serchpeope' element={ <SearchPeople />}/>
       <Route path='/wallet' element={<PaymentWrapper />}/>
+      <Route path='/home' element={<Home />}/>
     </RouterRoutes>
     </BrowserRouter>
 

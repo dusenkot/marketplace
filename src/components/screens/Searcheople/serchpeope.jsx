@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
-import logo from './logo.png'
+import App from '../home/form-send/forms-sends';
+import logot from './pp.png'
+
 // Маленька база даних з людьми
 const peopleData = [
   { id: 1, name: 'Ivan', age: 25 },
@@ -23,20 +25,14 @@ const SearchPeople = () => {
   };
 
   return (
+    
     <div style={styles.body}>
-      <header style={styles.header}>
-    <div style={styles.left}>
-      <img src={logo} alt="Logo" style={styles.logo} />
+       <div style={styles.middle}>
+      <App />
     </div>
-    <div style={styles.middle}>
-      <button style={styles.button}><span onClick={() => navigateTo('/about')}>About</span></button>
-      <button style={styles.button}><span onClick={() => navigateTo('/profile')}>Profile</span></button>
-      <button style={styles.button}><span onClick={() => navigateTo('/serchpeope')}>Wyszukaj</span></button>
-
-    </div>
-  </header>
-      <div style = {styles.div1}>
-      <p style={styles.search}>Search</p>
+ 
+      <p style={styles.search}><img src = {logot} style = {styles.logot}></img><div style = {styles.div1}>Search</div></p>
+      <p>Find your future partner</p>
       <input
         style = {styles.input}
         type="text"
@@ -44,7 +40,7 @@ const SearchPeople = () => {
         value={searchTerm}
         onChange={handleSearch}
       />
-      </div>
+     
       <ul>
         {searchResults.map((person) => (
           <li key={person.id}>{person.name}</li>
@@ -55,18 +51,26 @@ const SearchPeople = () => {
   );
 };
 const styles = {
-body:{
-  backgroundColor:"skyblue",
-  height: "100%",
-  
-},
-serch:{
-  marginLeft:"48%",
-  fontSize:"20px",
+  body: {
+    background: '#4040ff',
+    minHeight: '100vh',
+    textAlign:"center"
 },
 div1:{
-  textAlign:"center"
+  marginTop:"0px",
+  fontSize:"40px"
 },
+logot:{
+  
+  marginTop:"5px",
+  height:"120px"
+},
+search:{
+  marginTop:"40px",
+  marginLeft:"1%",
+  fontSize:"20px",
+},
+
 input:{
   textAlign:"center",
 
@@ -76,31 +80,6 @@ input:{
 
   marginBotton:"100%"
 },
-header: {
-  display: 'flex',
-  alignItems: 'center',
-  justifyContent: 'space-between',
-  backgroundColor: '#14FFF7',
-  padding: '10px',
-  borderRadius: '20px',
-},
-left: {},
-logo: {
-  height: '40px',
-  width: 'auto',
-},
-middle: {
-  display: 'flex',
-  justifyContent: 'center',
-},
-button: {
-  margin: '0 10px',
-  padding: '8px 16px',
-  backgroundColor: '#541A80',
-  color: '#ffffff',
-  border: 'none',
-  borderRadius: '3px',
-  cursor: 'pointer',
-},
+
 };
 export default SearchPeople;

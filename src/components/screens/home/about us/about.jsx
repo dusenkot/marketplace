@@ -1,10 +1,12 @@
 import React from 'react';
+import App from '../form-send/forms-sends';
 import profile from './a22.jpg';
 import bgimage_prof from './a23.png';
 import line from './linia.png';
 function About() {
   return (
     <div style={styles.container}>
+      <App />
         <img src = {line} style = {styles.line}></img>
       <h1 style={styles.heading}>Your Future - </h1>
       <p style={styles.heading1}>starts here</p>

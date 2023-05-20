@@ -9,13 +9,14 @@ return (
   
   <header style={styles.header}>
     <div style={styles.left}>
-      <img src="src/assets/logo.png" alt="Logo" style={styles.logo} />
+     <img src="src/assets/logo.png" alt="Logo" style={styles.logo} onClick={() => navigateTo('/home')}/>
     </div>
     <div style={styles.middle}>
       <button style={styles.button}><span onClick={() => navigateTo('/about')}>About</span></button>
       <button style={styles.button}><span onClick={() => navigateTo('/profile')}>Profile</span></button>
       <button style={styles.button}><span onClick={() => navigateTo('/serchpeope')}>Wyszukaj</span></button>
       <button style={styles.button}><span onClick={() => navigateTo('/wallet')}>Wallet</span></button>
+
     </div>
   </header>
 );
@@ -50,6 +51,7 @@ button: {
   borderRadius: '3px',
   cursor: 'pointer',
 },
+
 };
 
       
