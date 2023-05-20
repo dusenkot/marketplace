@@ -1,5 +1,5 @@
 import React from 'react';
-import profile from './a2.jpg'
+import profile from './a22.jpg'
 function About() {
   return (
     <div style={styles.container}>
@@ -12,6 +12,7 @@ function About() {
       <p style={styles.users_proposals}>Our users and their proposals</p>
       <div style={styles.main_div}>
         <img src={profile} style = {styles.img1} alt = ''></img><img src={profile} alt = ''></img>
+        
       </div>
     </div>
   );
@@ -51,7 +52,7 @@ const styles = {
     display: 'flex',
   },
   img1:{
-    marginRight:"15px",
+    marginRight:"30px",
     width:"500px",
     height:"auto"
   }

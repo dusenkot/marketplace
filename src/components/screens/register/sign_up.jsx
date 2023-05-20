@@ -1,6 +1,6 @@
-import styles from './sign_up.css'
+import React from 'react';
 
-function sing_up() {
+function SignUp() {
 
   return (
     
@@ -24,5 +24,38 @@ function sing_up() {
     </form>
   );
 };
+const styles = {
+  form: {
+    backgroundColor: '#263238',
+    color: '#ffffff',
+    padding: '20px',
+    borderRadius: '5px',
+    width: '30%',
+    maxWidth: '400px',
+    marginLeft: '35%',
+    margin: '0 auto',
+},
+label: {
+    display: 'block',
+    marginBottom: '8px',
+},
+input: {
+    width: '95%',
+    padding: '10px',
+    border: '1px solid #78909c',
+    borderRadius: '3px',
+    marginBottom: '15px',
+    color: '#ffffff',
+    backgroundColor: '#37474f',
+},
+submitButton: {
+    backgroundColor: '#1976d2',
+    color: '#ffffff',
+    padding: '10px 20px',
+    border: 'none',
+    borderRadius: '3px',
+    cursor: 'pointer',
+},
+}
 
-export default sing_up
+export default SignUp;
