@@ -23,8 +23,9 @@ header: {
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'space-between',
-  backgroundColor: '#E1F5FE',
+  backgroundColor: '#14FFF7',
   padding: '10px',
+  borderRadius: '20px',
 },
 left: {},
 logo: {
@@ -38,7 +39,7 @@ middle: {
 button: {
   margin: '0 10px',
   padding: '8px 16px',
-  backgroundColor: '#B3E5FC',
+  backgroundColor: '#541A80',
   color: '#ffffff',
   border: 'none',
   borderRadius: '3px',
