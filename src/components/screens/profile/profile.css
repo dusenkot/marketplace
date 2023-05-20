@@ -13,11 +13,12 @@
     z-index: 1;
 }
 #avatar{
+    display:none;
 }
 #back{
     position:absolute;
     margin-left:20px;
-    width:1333px;
+    width:444%;
     height:100px;
     margin-left: -100%;
     z-index: -1;

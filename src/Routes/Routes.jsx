@@ -4,6 +4,7 @@ import About from '../components/screens/home/about us/about';
 import Home from '../components/screens/home/Home';
 import Profile from '../components/screens/profile/profile';
 import SearchPeople from '../components/screens/Searcheople/serchpeope';
+import PaymentWrapper from '../components/screens/Wallet/wallet';
 
 
 
@@ -15,6 +16,7 @@ function Routes(){
       <Route path='/profile' element={ <Profile />}/>
       <Route path='/about' element={ <About/>}/>
       <Route path='/serchpeope' element={ <SearchPeople />}/>
+      <Route path='/wallet' element={<PaymentWrapper />}/>
     </RouterRoutes>
     </BrowserRouter>
 

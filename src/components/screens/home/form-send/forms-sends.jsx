@@ -15,7 +15,7 @@ return (
       <button style={styles.button}><span onClick={() => navigateTo('/about')}>About</span></button>
       <button style={styles.button}><span onClick={() => navigateTo('/profile')}>Profile</span></button>
       <button style={styles.button}><span onClick={() => navigateTo('/serchpeope')}>Wyszukaj</span></button>
-
+      <button style={styles.button}><span onClick={() => navigateTo('/wallet')}>Wallet</span></button>
     </div>
   </header>
 );
