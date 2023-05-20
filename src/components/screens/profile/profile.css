@@ -1,0 +1,39 @@
+#pl{
+    margin-top:60px;
+    margin-left:20px;
+    padding:50px 50px;
+    background-color: white;
+    float:left;
+    height: 200px;
+    width:150px;
+    display:block;
+
+}
+#p{
+    color:blue;
+}
+#pr{
+    margin-top:60px;
+    margin-left:30px;
+    
+    background-color: white;
+    text-align: center;
+    width:800px;
+    height:400px;
+   
+    display:block;
+    float:left;
+}
+    
+body{
+    background-color: rgb(61, 61, 237);
+}
+img{
+    height:100px;
+    width:100px;
+}
+#text{
+    height:150px;
+    width:750px;
+    border:none;
+}

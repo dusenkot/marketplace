@@ -1,4 +1,4 @@
-import style from './sign_up.css'
+import styles from './sign_up.css'
 
 function sing_up() {
 
