@@ -2,6 +2,7 @@ import React, { useRef } from 'react';
 import style from './profile.css';
 import image from './pic.png';
 import image2 from './startuper.jpg';
+import Apps from '/form-send/forms-sends';
 
 function Bound() {
   const inputRef = useRef(null);
@@ -17,6 +18,7 @@ function Bound() {
 
   return (
     <div>
+      <Apps />
       <input
         type="file"
         id="avatar"
