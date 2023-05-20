@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import logo from './logo.png'
 // Маленька база даних з людьми
 const peopleData = [
   { id: 1, name: 'Ivan', age: 25 },
@@ -26,7 +26,7 @@ const SearchPeople = () => {
     <div style={styles.body}>
       <header style={styles.header}>
     <div style={styles.left}>
-      <img src="path/to/image.png" alt="Logo" style={styles.logo} />
+      <img src={logo} alt="Logo" style={styles.logo} />
     </div>
     <div style={styles.middle}>
       <button style={styles.button}><span onClick={() => navigateTo('/about')}>About</span></button>
@@ -57,12 +57,12 @@ const SearchPeople = () => {
 const styles = {
 body:{
   backgroundColor:"skyblue",
-  height: "",
+  height: "100%",
   
 },
 serch:{
   marginLeft:"48%",
-  fontSize
+  fontSize:"20px"
 },
 div1:{
   textAlign:"center"
@@ -74,7 +74,7 @@ input:{
   height:"30px",
   borderRadius:"5%",
 
-  marginBotton:"20%"
+  marginBotton:"100%"
 },
 header: {
   display: 'flex',
