@@ -62,7 +62,7 @@ body:{
 },
 serch:{
   marginLeft:"48%",
-  fontSize:"20px"
+  fontSize:"20px",
 },
 div1:{
   textAlign:"center"
