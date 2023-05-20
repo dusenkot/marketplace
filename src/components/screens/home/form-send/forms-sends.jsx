@@ -1,7 +1,7 @@
 import React from 'react';
 import { useNavigate  } from 'react-router-dom';
 
-const FormSends = () => {
+const App = () => {
   const navigateTo = useNavigate();
 
 
@@ -53,5 +53,5 @@ button: {
 };
 
       
-export default FormSends
+export default App
 

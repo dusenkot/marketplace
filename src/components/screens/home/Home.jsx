@@ -1,6 +1,7 @@
 import React from 'react';
 import App from './form-send/forms-sends';
 
+
 const StartupIdeas = () => {
   const ideas = [
     {
