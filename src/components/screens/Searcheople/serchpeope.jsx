@@ -23,20 +23,84 @@ const SearchPeople = () => {
   };
 
   return (
-    <div>
+    <div style={styles.body}>
+      <header style={styles.header}>
+    <div style={styles.left}>
+      <img src="path/to/image.png" alt="Logo" style={styles.logo} />
+    </div>
+    <div style={styles.middle}>
+      <button style={styles.button}><span onClick={() => navigateTo('/about')}>About</span></button>
+      <button style={styles.button}><span onClick={() => navigateTo('/profile')}>Profile</span></button>
+      <button style={styles.button}><span onClick={() => navigateTo('/serchpeope')}>Wyszukaj</span></button>
+
+    </div>
+  </header>
+      <div style = {styles.div1}>
+      <p style={styles.search}>Search</p>
       <input
+        style = {styles.input}
         type="text"
         placeholder="Writte name people"
         value={searchTerm}
         onChange={handleSearch}
       />
+      </div>
       <ul>
         {searchResults.map((person) => (
           <li key={person.id}>{person.name}</li>
         ))}
       </ul>
-    </div>
+      </div>
+    
   );
 };
+const styles = {
+body:{
+  backgroundColor:"skyblue",
+  height: "",
+  
+},
+serch:{
+  marginLeft:"48%",
+  fontSize
+},
+div1:{
+  textAlign:"center"
+},
+input:{
+  textAlign:"center",
 
+  width:"600px",
+  height:"30px",
+  borderRadius:"5%",
+
+  marginBotton:"20%"
+},
+header: {
+  display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'space-between',
+  backgroundColor: '#14FFF7',
+  padding: '10px',
+  borderRadius: '20px',
+},
+left: {},
+logo: {
+  height: '40px',
+  width: 'auto',
+},
+middle: {
+  display: 'flex',
+  justifyContent: 'center',
+},
+button: {
+  margin: '0 10px',
+  padding: '8px 16px',
+  backgroundColor: '#541A80',
+  color: '#ffffff',
+  border: 'none',
+  borderRadius: '3px',
+  cursor: 'pointer',
+},
+};
 export default SearchPeople;
