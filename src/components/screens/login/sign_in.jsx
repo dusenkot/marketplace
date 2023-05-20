@@ -1,4 +1,4 @@
-import style from './sign_in.css'
+import styles from './sing_in.css'
 
 function sing_in() {
 
