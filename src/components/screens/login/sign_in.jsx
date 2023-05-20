@@ -1,6 +1,6 @@
 import styles from './sing_in.css'
 
-function sing_in() {
+function singIn() {
 
     return (
         <div style={styles.container}>
@@ -22,4 +22,4 @@ function sing_in() {
       );
 };
         
-    export default SignInWindow;
+    export default SignIn;

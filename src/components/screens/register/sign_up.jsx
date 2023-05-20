@@ -25,4 +25,4 @@ function sing_up() {
   );
 };
 
-export default sing_up
+export default sing_up;
