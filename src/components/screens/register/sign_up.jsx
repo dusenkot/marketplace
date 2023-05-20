@@ -4,6 +4,7 @@ import React from 'react';
 function SignUp() {
 
   return (
+    <div style={styles.background}>
       <form style={styles.form}>
       <label htmlFor="name" style={styles.label}>Name:</label>
       <input type="text" id="name" name="name" required style={styles.input} />
@@ -22,11 +23,15 @@ function SignUp() {
 
       <input type="submit" value="Submit" style={styles.submitButton} />
     </form>
-    
+    </div>
 
   );
 };
 const styles = {
+  background: {
+    background: 'linear-gradient(to bottom right, #005c98, #005c98 0%, #003261 0%, #005c98 75%)',
+    minHeight: '100vh',
+  },
   form: {
     backgroundColor: '#263238',
     color: '#ffffff',
@@ -36,7 +41,6 @@ const styles = {
     maxWidth: '400px',
     marginLeft: '35%',
     margin: '0 auto',
-    marginTop: '10%',
 },
   label: {
     display: 'block',
