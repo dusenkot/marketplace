@@ -6,9 +6,10 @@ const FormSends = () => {
 
 
 return (
+  
   <header style={styles.header}>
     <div style={styles.left}>
-      <img src="path/to/image.png" alt="Logo" style={styles.logo} />
+      <img src="src/assets/logo.png" alt="Logo" style={styles.logo} />
     </div>
     <div style={styles.middle}>
       <button style={styles.button}><span onClick={() => navigateTo('/about')}>About</span></button>
@@ -31,7 +32,7 @@ header: {
 },
 left: {},
 logo: {
-  height: '40px',
+  height: '60px',
   width: 'auto',
 },
 middle: {
@@ -39,9 +40,11 @@ middle: {
   justifyContent: 'center',
 },
 button: {
-  margin: '0 10px',
+  height:'60px',
+  fontSize:'30px',
+  margin: '0 50px',
   padding: '8px 16px',
-  backgroundColor: '#541A80',
+  background: 'transparent',
   color: '#ffffff',
   border: 'none',
   borderRadius: '3px',
