@@ -23,7 +23,7 @@ function Profile(){
             </ul>
         </div>
         <div id="pr" style={style.pr}>
-        <h2>Personal information</h2>
+        <h2 id="inf">Personal information</h2>
             <form>
                 <input type="text" id="text" name="text" value="Tell something about yourself"/>
             </form>

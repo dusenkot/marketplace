@@ -17,7 +17,7 @@
 #back{
     position:absolute;
     margin-left:20px;
-    width:1325px;
+    width:1333px;
     height:100px;
     margin-left: -100%;
     z-index: -1;
@@ -70,6 +70,9 @@
     
 #t{
     background-color: rgb(61, 61, 237);
+}
+#inf{
+    margin-top:-70px;
 }
 h2{
     color:rgb(38, 38, 140);
