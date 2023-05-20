@@ -1,10 +1,10 @@
 import React from 'react';
 
+
 function SignUp() {
 
   return (
-    
-    <form style={styles.form}>
+      <form style={styles.form}>
       <label htmlFor="name" style={styles.label}>Name:</label>
       <input type="text" id="name" name="name" required style={styles.input} />
 
@@ -22,6 +22,8 @@ function SignUp() {
 
       <input type="submit" value="Submit" style={styles.submitButton} />
     </form>
+    
+
   );
 };
 const styles = {
@@ -34,12 +36,13 @@ const styles = {
     maxWidth: '400px',
     marginLeft: '35%',
     margin: '0 auto',
+    marginTop: '10%',
 },
-label: {
+  label: {
     display: 'block',
     marginBottom: '8px',
 },
-input: {
+  input: {
     width: '95%',
     padding: '10px',
     border: '1px solid #78909c',
@@ -48,7 +51,7 @@ input: {
     color: '#ffffff',
     backgroundColor: '#37474f',
 },
-submitButton: {
+  submitButton: {
     backgroundColor: '#1976d2',
     color: '#ffffff',
     padding: '10px 20px',
