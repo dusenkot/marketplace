@@ -2,6 +2,9 @@ import React from 'react';
 import style from './profile.css'
 import image from  './pic.png'
 import image2 from  './startuper.jpg'
+function Bound(){
+return <input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg"></input>
+}
 
 function Profile(){
     return(
@@ -17,10 +20,13 @@ function Profile(){
         <div id="pl" style={style.pl}>
             <h4 id="p">Wojciech Nowak</h4>
             <ul>
-                 <li><a href="">Choose avatar picture</a></li>
+                 <li><a href="" onClick={Bound}>Choose avatar picture</a></li>
                  <li><a href="">Contact with me</a></li>
-                 <li><a href="">Your wallet</a></li>
-            </ul>
+                 <li><a href="" >Your wallet</a></li>
+             </ul>
+            
+
+            
         </div>
         <div id="pr" style={style.pr}>
         <h2 id="inf">Personal information</h2>

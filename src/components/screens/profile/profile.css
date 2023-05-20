@@ -13,6 +13,7 @@
     z-index: 1;
 }
 #avatar{
+    display:none;
 }
 #back{
     position:absolute;
