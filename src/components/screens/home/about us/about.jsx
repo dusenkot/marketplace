@@ -1,5 +1,5 @@
 import React from 'react';
-
+import profile from './a2.jpg'
 function About() {
   return (
     <div style={styles.container}>
@@ -10,16 +10,18 @@ function About() {
         So, we have user-friendly interface, convenience and security, smart communication, quality feedback, development and improvement of the platform
       </p>
       <p style={styles.users_proposals}>Our users and their proposals</p>
-      <div style={styles.main_div}></div>
+      <div style={styles.main_div}>
+        <img src={profile} style = {styles.img1} alt = ''></img><img src={profile} alt = ''></img>
+      </div>
     </div>
   );
 }
 
 const styles = {
   container: {
-    backgroundColor: 'red',
+    backgroundColor: '#263238',
     color: '#ffffff',
-    padding: '50px',
+    padding: '20px',
     textAlign: 'left',
   },
   heading: {
@@ -48,6 +50,11 @@ const styles = {
   main_div: {
     display: 'flex',
   },
+  img1:{
+    marginRight:"15px",
+    width:"500px",
+    height:"auto"
+  }
 };
 
 export default About;
