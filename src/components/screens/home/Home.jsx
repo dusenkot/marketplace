@@ -51,7 +51,11 @@ const StartupIdeas = () => {
   ];
 
   return (
+<<<<<<< HEAD
     <div style={styles.background}>
+=======
+    <div>
+>>>>>>> 8f00208 (1231231)
       <App />
       {ideas.map((idea, index) => (
         <div key={index} style={styles.idea}>
