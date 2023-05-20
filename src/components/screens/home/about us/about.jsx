@@ -1,7 +1,6 @@
 import React from 'react';
 import profile from './a22.jpg';
 import bgimage_prof from './a23.png';
-import bg from './12.jpeg';
 import line from './linia.png';
 function About() {
   return (
@@ -22,7 +21,7 @@ function About() {
       <p style={styles.users_proposals}>Our users and their proposals</p>
       <div style={styles.main_div}>
         <div style = {styles.image1}><img src={profile} style = {styles.img1} alt = ''></img></div>
-        <div style = {styles.image2}><img src={profile} style = {styles.img2} alt = ''></img>  </div>
+        <div style = {styles.image2}><img src={profile} style = {styles.img2} alt = ''></img></div>
         <div style = {styles.image3}><img src={profile} style = {styles.img3} alt = ''></img></div>
     </div>
     <div style = {styles.full_inf}>
