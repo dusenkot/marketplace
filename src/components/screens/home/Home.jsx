@@ -51,7 +51,8 @@ const StartupIdeas = () => {
   ];
 
   return (
-    <div>
+    <div style={styles.background}>
+      <App />
       {ideas.map((idea, index) => (
         <div key={index} style={styles.idea}>
           <h2 style={styles.name}>{idea.name}</h2>
@@ -68,11 +69,19 @@ const StartupIdeas = () => {
 };
 
 const styles = {
+  background: {
+    background: 'linear-gradient(to bottom right, #005c98, #005c98 0%, #003261 0%, #005c98 75%)',
+    minHeight: '100vh',
+  },
   idea: {
-    backgroundColor: '#212121',
+    backgroundColor: '#0FE0EB',
     color: '#ffffff',
     padding: '20px',
-    marginBottom: '20px',
+    marginBottom: '10px',
+    borderRadius:'15px',
+    maxWidth:'70%',
+    marginLeft:'15%',
+    marginTop: '5%',
   },
   name: {
     fontSize: '24px',

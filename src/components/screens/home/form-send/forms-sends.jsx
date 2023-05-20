@@ -6,13 +6,16 @@ const FormSends = () => {
 
 
 return (
+  
   <header style={styles.header}>
     <div style={styles.left}>
-      <img src="path/to/image.png" alt="Logo" style={styles.logo} />
+      <img src="src/assets/logo.png" alt="Logo" style={styles.logo} />
     </div>
     <div style={styles.middle}>
       <button style={styles.button}><span onClick={() => navigateTo('/about')}>About</span></button>
       <button style={styles.button}><span onClick={() => navigateTo('/profile')}>Profile</span></button>
+      <button style={styles.button}><span onClick={() => navigateTo('/serchpeope')}>Wyszukaj</span></button>
+
     </div>
   </header>
 );
@@ -23,12 +26,13 @@ header: {
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'space-between',
-  backgroundColor: '#E1F5FE',
+  backgroundColor: '#14FFF7',
   padding: '10px',
+  borderRadius: '20px',
 },
 left: {},
 logo: {
-  height: '40px',
+  height: '60px',
   width: 'auto',
 },
 middle: {
@@ -36,9 +40,11 @@ middle: {
   justifyContent: 'center',
 },
 button: {
-  margin: '0 10px',
+  height:'60px',
+  fontSize:'30px',
+  margin: '0 50px',
   padding: '8px 16px',
-  backgroundColor: '#B3E5FC',
+  background: 'transparent',
   color: '#ffffff',
   border: 'none',
   borderRadius: '3px',
