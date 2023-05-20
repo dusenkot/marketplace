@@ -1,6 +1,7 @@
-import styles from './sing_in.css'
+import React from 'react';
+import styles from './sign_in.css'
 
-function singIn() {
+function SignIn(){
 
     return (
         <div style={styles.container}>

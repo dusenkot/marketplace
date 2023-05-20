@@ -1,6 +1,7 @@
+import React from 'react';
 import styles from './sign_up.css'
 
-function sing_up() {
+function SignUp() {
 
   return (
     
@@ -25,4 +26,4 @@ function sing_up() {
   );
 };
 
-export default sing_up;
+export default SignUp;
