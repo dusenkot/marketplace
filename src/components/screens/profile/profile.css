@@ -1,8 +1,9 @@
 
 #wsp{
     position:relative;
-    width:300px;
+    width:100%;
     height:225px;
+    border-radius: 20px;
 }
 #prof{
     position:relative;
@@ -18,7 +19,7 @@
 #back{
     position:absolute;
     margin-left:20px;
-    width:444%;
+    width:100%;
     height:100px;
     margin-left: -100%;
     z-index: -1;
@@ -35,7 +36,7 @@
     z-index:2;
     margin-top:-50px;
     margin-left:550px;
-    width:500px;
+    width:400px;
 }
 #pl{
     margin-top:0px;
@@ -63,7 +64,7 @@
     background-color: white;
     text-align: center;
     width:800px;
-    height:400px;
+    height:390px;
    
     display:block;
     float:left;
@@ -72,19 +73,17 @@
 #t{
     background-color: rgb(61, 61, 237);
 }
-#inf{
-    margin-top:-70px;
-}
+
 h2{
     color:rgb(38, 38, 140);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
     margin-top: 10px;
 }
 #text{
-    height:150px;
+    height:120px;
     width:750px;
     border-color:rgb(43, 109, 223);
-   
+    margin-top: 10px;
 }
 li{
     margin-left:-40px;
