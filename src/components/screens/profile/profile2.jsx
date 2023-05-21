@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 import style from './profile.css';
 import image from './pic.png';
-import image2 from './startuper.jpg';
+import image2 from './defoult.jpg';
 import App from '../home/form-send/forms-sends';
 
 
@@ -49,7 +49,7 @@ function Profile() {
           
         </div>
         <div id="pl" style={style.pl}>
-          <h4 id="p">Wojciech Nowak</h4>
+          <h4 id="p">Pablo Kowalski</h4>
           <ul>
             <li>
               <Bound />
@@ -70,7 +70,7 @@ function Profile() {
         <div id="pr" style={style.pr}>
           <h2 id="inf">Personal information</h2>
           <form>
-            <input type="text" id="text" name="text" defaultValue="Tell something about yourself" />
+            <input type="text" id="text" name="text" defaultValue="email:w00000@student.wsiz.edu.pl,  numer telefonu:+4812345612" />
           </form>
           <h2>Description of the start-up</h2>
           <form>
