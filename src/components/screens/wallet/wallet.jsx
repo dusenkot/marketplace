@@ -57,7 +57,7 @@ class PaymentWrapper extends React.Component {
           <br />
           <button type="submit" style={styles.button}>Submit Payment</button>
         </form>
-        <h3 style={styles.heading}>You balance:0</h3>
+        <h3 style={styles.heading}>You balance: 0</h3>
       </div>
     );
   }
