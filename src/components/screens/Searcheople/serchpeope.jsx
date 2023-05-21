@@ -73,7 +73,7 @@ const SearchPeople = () => {
         </select>
       </div>
       {filteredResults.length > 0 ? (
-        <ul>
+        <ul style={styles.ul}>
           {filteredResults.map((person) => (
             <li key={person.id}>
               {person.name} - {person.age} years old
@@ -122,6 +122,9 @@ const styles = {
     width: '150px',
     height: '30px',
     borderRadius: '5%',
+  },
+  ul: {
+    marginLeft: '45%',
   },
 };
 
