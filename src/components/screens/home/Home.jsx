@@ -79,6 +79,7 @@ const StartupIdeas = () => {
     backgroundPosition: 'center',
     width: '100%',}}>
       <App />
+      <App1 />
       {ideas.map((idea, index) => (
         <div key={index} style={styles.idea}>
           <h2 style={styles.name}>{idea.name}</h2>
