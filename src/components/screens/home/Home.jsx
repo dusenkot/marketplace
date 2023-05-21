@@ -95,7 +95,7 @@ const StartupIdeas = () => {
             <p style={styles.createDate}>Created: {selectedIdea.createDate}</p>
             <p style={styles.endUserPrice}>End User Price: {selectedIdea.endUserPrice}</p>
             <p style={styles.estimatedFinishDate}>Estimated Finish Date: {selectedIdea.estimatedFinishDate}</p>
-            <button style={styles.button}><span onClick={() => navigateTo('/profile')}>Contact</span></button>
+            <button style={styles.button}><span onClick={() => navigateTo('/profile2')}>Contact</span></button>
           </div>
         </div>
       )}
