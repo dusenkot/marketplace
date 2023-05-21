@@ -30,7 +30,7 @@ const App = () => {
               <button style={styles.dropdownButton} onClick={() => handleButtonClick('/profile')}>
                 Profile
               </button>
-              <button style={styles.dropdownButton} onClick={() => handleButtonClick('/searchpeople')}>
+              <button style={styles.dropdownButton} onClick={() => handleButtonClick('/serchpeope')}>
                 Search People
               </button>
               <button style={styles.dropdownButton} onClick={() => handleButtonClick('/wallet')}>
