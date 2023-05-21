@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 import style from './profile.css';
 import image from './pic.png';
-import image2 from './defoult.jpg';
+import image2 from './default.jpg';
 import App from '../home/form-send/forms-sends';
 
 
@@ -36,7 +36,7 @@ function Bound() {
   );
 }
 
-function Profile() {
+function Profile2() {
   return (
     <div style={styles.background}>
       <App />
@@ -93,4 +93,4 @@ const styles = {
     minHeight: '100vh',
   },
 }
-export default Profile;
+export default Profile2;
