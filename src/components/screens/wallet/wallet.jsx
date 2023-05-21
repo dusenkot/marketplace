@@ -1,6 +1,6 @@
 import React from 'react';
 import App from '../home/form-send/forms-sends';
-
+import backgroundImage from './hueta6_3.jpg';
 class PaymentWrapper extends React.Component {
   constructor(props) {
     super(props);
@@ -28,8 +28,19 @@ class PaymentWrapper extends React.Component {
 
   render() {
     return (
-      <div style={styles.main}>
+      <div>
         <App />
+      <div style={{ backgroundImage: `url(${backgroundImage})`,
+      backgroundSize: 'cover',
+      backgroundPosition: 'center',
+      width: '100%',
+      display: 'flex',
+      height:'800px',
+      alignItems: 'center',
+      justifyContent: 'center',
+      }}>
+      
+        <div style={styles.diver}>
         <h2 style={styles.heading}>Payment System</h2>
         <form onSubmit={this.handleSubmit}>
           <label style={styles.label}>
@@ -58,20 +69,25 @@ class PaymentWrapper extends React.Component {
           <button type="submit" style={styles.button}>Submit Payment</button>
         </form>
         <h3 style={styles.heading}>You balance: 0</h3>
+        </div>
+      </div>
       </div>
     );
   }
 }
 
 const styles = {
-  main: {
+  diver: {
+    width:'30%',
+    borderRadius:'15px',
+    background:'rgba(100,100,100,0.6)',
     textAlign: 'center',
-    background: '#4040ff',
-    minHeight: '100vh',
+    minHeight: '300px',
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
     justifyContent: 'center',
+      
   },
   heading: {
     color: '#fff',

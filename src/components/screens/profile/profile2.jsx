@@ -58,7 +58,7 @@ function Profile2() {
           </form>
           <h2>Description of the start-up</h2>
           <form>
-            <input
+            <input readOnly
               type="text"
               id="text"
               name="text"
