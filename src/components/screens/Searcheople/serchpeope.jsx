@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import App from '../home/form-send/forms-sends';
-import Footer from '../home/form-send/footer';
+
 import backgroundImage from './hueta6_2.jpg';
 
 const peopleData = [
@@ -47,15 +47,17 @@ const SearchPeople = () => {
     backgroundSize: 'cover',
     backgroundPosition: 'center',
     width: '100%',
-    height:'800px',}}>
-      <div style={styles.middle}>
-        <App />
+    height:'800px',
+    color:'white'}}>
+      <App />
+      <div style={styles.filters}>
+        
       </div>
       <p style={styles.search}>
         
         <div style={styles.div1}>Search</div>
       </p>
-      <p>Find your future partner</p>
+      <p style={styles.search}>Find your future partner</p>
       <div style={styles.filters}>
         <input
           style={styles.input}
@@ -86,10 +88,10 @@ const SearchPeople = () => {
           ))}
         </ul>
       ) : (
-        <p>No results found</p>
+        <p style={styles.search}>No results found</p>
       )}
-      
-    </div>
+      </div>
+    
   );
 };
 
@@ -104,7 +106,7 @@ const styles = {
   },
   search: {
     marginTop: '40px',
-    marginLeft: '1%',
+    textAlign: 'center',
     fontSize: '20px',
   },
   filters: {
