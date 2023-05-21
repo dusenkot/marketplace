@@ -3,7 +3,7 @@ import style from './profile.css';
 import image from './pic.png';
 import image2 from './startuper.jpg';
 import App from '../home/form-send/forms-sends';
-
+import backgroundImage from './hueta6_1.jpg';
 
 function Bound() {
   const inputRef = useRef(null);
@@ -38,7 +38,10 @@ function Bound() {
 
 function Profile() {
   return (
-    <div style={styles.background}>
+    <div style={{ backgroundImage: `url(${backgroundImage})`,
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+    width: '100%',}}>
       <App />
       <div >
         <div id="wsp">

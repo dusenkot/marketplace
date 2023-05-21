@@ -3,7 +3,7 @@ import style from './profile.css';
 import image from './pic.png';
 import image2 from './default.jpg';
 import App from '../home/form-send/forms-sends';
-
+import backgroundImage from './hueta6_1.jpg';
 
 function Bound() {
   const inputRef = useRef(null);
@@ -17,28 +17,15 @@ function Bound() {
     console.log('You selected the file:', file);
   };
 
-  return (
-    <div>
-        
-      <input
-        type="file"
-        id="avatar"
-        name="avatar"
-        accept="image/png, image/jpeg"
-        style={{ display: 'none' }}
-        ref={inputRef}
-        onChange={handleFileChange}
-      />
-      <a href="#" onClick={handleFileSelect}>
-        Choose avatar picture
-      </a>
-    </div>
-  );
+  
 }
 
 function Profile2() {
   return (
-    <div style={styles.background}>
+    <div style={{ backgroundImage: `url(${backgroundImage})`,
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+    width: '100%',}}>
       <App />
       <div >
         <div id="wsp">
@@ -57,10 +44,7 @@ function Profile2() {
             <li>
               <a href="#">Contact with me</a>
             </li>
-            <li>
-              <a href="#">Your wallet</a>
-            </li>
-          </ul>
+           </ul>
         </div>
 
 

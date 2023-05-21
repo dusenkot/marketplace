@@ -152,7 +152,7 @@ const styles = {
     zIndex: '9999',
   },
   modalContent: {
-    backgroundColor: '#ffffff',
+    backgroundColor: 'lightgray',
     padding: '20px',
     borderRadius: '10px',
     maxWidth: '80%',
