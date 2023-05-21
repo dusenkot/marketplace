@@ -72,13 +72,17 @@ const SearchPeople = () => {
           <option value="35">35 years</option>
         </select>
       </div>
-      <ul>
-        {filteredResults.map((person) => (
-          <li key={person.id}>
-            {person.name} - {person.age} years old
-          </li>
-        ))}
-      </ul>
+      {filteredResults.length > 0 ? (
+        <ul>
+          {filteredResults.map((person) => (
+            <li key={person.id}>
+              {person.name} - {person.age} years old
+            </li>
+          ))}
+        </ul>
+      ) : (
+        <p>No results found</p>
+      )}
     </div>
   );
 };
