@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import App from './form-send/forms-sends';
+import App1 from './form-send/forms-sendsbutton';
 import backgroundImage from './form-send/star.jpg';
 
 const SellerProfile = ({ name, email, phone }) => {
