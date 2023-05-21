@@ -3,7 +3,7 @@ import { useNavigate  } from 'react-router-dom';
 import App from './form-send/forms-sends';
 import App1 from './form-send/forms-sendsbutton';
 import backgroundImage from './form-send/star.jpg';
-
+import Footer from './form-send/footer.jsx';
 
 
 const StartupIdeas = () => {
@@ -99,7 +99,9 @@ const StartupIdeas = () => {
           </div>
         </div>
       )}
+    <Footer />
     </div>
+    
 );
 };
 
