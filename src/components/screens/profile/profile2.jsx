@@ -54,7 +54,7 @@ function Profile2() {
         <div id="pr" style={style.pr}>
           <h2 id="inf">Personal information</h2>
           <form>
-            <input type="text" id="text" name="text" defaultValue="email:w00000@student.wsiz.edu.pl,  numer telefonu:+4812345612" />
+            <input readOnly type="text" id="text" name="text" defaultValue="email:w00000@student.wsiz.edu.pl,  numer telefonu:+4812345612" />
           </form>
           <h2>Description of the start-up</h2>
           <form>
