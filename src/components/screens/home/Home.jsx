@@ -1,20 +1,14 @@
 import React, { useState } from 'react';
+import { useNavigate  } from 'react-router-dom';
 import App from './form-send/forms-sends';
 import App1 from './form-send/forms-sendsbutton';
 import backgroundImage from './form-send/star.jpg';
 
-const SellerProfile = ({ name, email, phone }) => {
-  return (
-    <div style={styles.profile}>
-      <h2>{name}</h2>
-      <p>Email: {email}</p>
-      <p>Phone: {phone}</p>
-    </div>
-  );
-};
+
+
 const StartupIdeas = () => {
   const [selectedIdea, setSelectedIdea] = useState(null);
-  const [selectedSeller, setSelectedSeller] = useState(null);
+  const navigateTo = useNavigate()
 
   const ideas = [
     {name: 'EcoSwap',
@@ -101,23 +95,12 @@ const StartupIdeas = () => {
             <p style={styles.createDate}>Created: {selectedIdea.createDate}</p>
             <p style={styles.endUserPrice}>End User Price: {selectedIdea.endUserPrice}</p>
             <p style={styles.estimatedFinishDate}>Estimated Finish Date: {selectedIdea.estimatedFinishDate}</p>
-            <button style={styles.contactButton} onClick={() => openProfile(selectedIdea.team)}>Contact Seller</button>
-          </div>
-        </div>
-      )}
-
-      {selectedSeller && (
-        <div style={styles.modal}>
-          <div style={styles.modalContent}>
-            <span style={styles.closeButton} onClick={closeDescription}>
-              &times;
-            </span>
-            <SellerProfile {...selectedSeller} />
+            <button style={styles.button}><span onClick={() => navigateTo('/profile')}>Contact</span></button>
           </div>
         </div>
       )}
     </div>
-  );
+);
 };
 
 
