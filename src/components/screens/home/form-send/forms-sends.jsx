@@ -1,60 +1,103 @@
-import React from 'react';
-import { useNavigate  } from 'react-router-dom';
+import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+
 
 const App = () => {
   const navigateTo = useNavigate();
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
+  const handleDropdownToggle = () => {
+    setIsDropdownOpen(!isDropdownOpen);
+  };
 
-return (
-  
-  <header style={styles.header}>
-    <div style={styles.left}>
-     <img src="src/assets/logo.png" alt="Logo" style={styles.logo} onClick={() => navigateTo('/home')}/>
-    </div>
-    <div style={styles.middle}>
-      <button style={styles.button}><span onClick={() => navigateTo('/about')}>About</span></button>
-      <button style={styles.button}><span onClick={() => navigateTo('/profile')}>Profile</span></button>
-      <button style={styles.button}><span onClick={() => navigateTo('/serchpeope')}>Wyszukaj</span></button>
-      <button style={styles.button}><span onClick={() => navigateTo('/wallet')}>Wallet</span></button>
+  const handleButtonClick = (route) => {
+    navigateTo(route);
+    setIsDropdownOpen(false);
+  };
 
-    </div>
-  </header>
-);
+  return (
+    <header style={styles.header}>
+      <div style={styles.left}>
+        <img src="src/assets/logo.png" alt="Logo" style={styles.logo} onClick={() => navigateTo('/home')} />
+      </div>
+      <div style={styles.middle}>
+        <div style={styles.dropdownContainer} onMouseEnter={handleDropdownToggle} onMouseLeave={handleDropdownToggle}>
+          <button style={styles.button}>
+            <span>Menu</span>
+          </button>
+          {isDropdownOpen && (
+            <div style={styles.dropdownMenu}>
+              <button style={styles.dropdownButton} onClick={() => handleButtonClick('/profile')}>
+                Profile
+              </button>
+              <button style={styles.dropdownButton} onClick={() => handleButtonClick('/searchpeople')}>
+                Search People
+              </button>
+              <button style={styles.dropdownButton} onClick={() => handleButtonClick('/wallet')}>
+                Wallet
+              </button>
+            </div>
+          )}
+        </div>
+      </div>
+    </header>
+  );
 };
 
 const styles = {
-header: {
-  display: 'flex',
-  alignItems: 'center',
-  justifyContent: 'space-between',
-  backgroundColor: '#14FFF7',
-  padding: '10px',
-  borderRadius: '20px',
-},
-left: {},
-logo: {
-  height: '60px',
-  width: 'auto',
-},
-middle: {
-  display: 'flex',
-  justifyContent: 'center',
-},
-button: {
-  height:'60px',
-  fontSize:'30px',
-  margin: '0 50px',
-  padding: '8px 16px',
-  background: 'transparent',
-  color: '#ffffff',
-  border: 'none',
-  borderRadius: '3px',
-  cursor: 'pointer',
-  
-},
-
+  header: {
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    backgroundColor: '#14FFF7',
+    padding: '10px',
+    borderRadius: '20px',
+  },
+  left: {},
+  logo: {
+    height: '60px',
+    width: 'auto',
+  },
+  middle: {
+    display: 'flex',
+    justifyContent: 'center',
+  },
+  dropdownContainer: {
+    position: 'relative',
+  },
+  button: {
+    height: '60px',
+    fontSize: '30px',
+    margin: '0 50px',
+    padding: '8px 16px',
+    background: 'transparent',
+    color: '#ffffff',
+    border: 'none',
+    borderRadius: '3px',
+    cursor: 'pointer',
+  },
+  dropdownMenu: {
+    position: 'absolute',
+    top: '100%',
+    right: 0,
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'flex-end',
+    backgroundColor: '#14FFF7',
+    borderRadius: '3px',
+    padding: '8px',
+    boxShadow: '0px 2px 4px rgba(0, 0, 0, 0.2)',
+  },
+  dropdownButton: {
+    fontSize: '18px',
+    margin: '4px 0',
+    padding: '8px',
+    background: 'transparent',
+    color: '#ffffff',
+    border: 'none',
+    borderRadius: '3px',
+    cursor: 'pointer',
+  },
 };
 
-      
-export default App
-
+export default App;
