@@ -36,6 +36,9 @@ const App = () => {
               <button style={styles.dropdownButton} onClick={() => handleButtonClick('/wallet')}>
                 Wallet
               </button>
+              <button style={styles.dropdownButton} onClick={() => handleButtonClick('http://localhost/login-register/registration.php#')}>
+                Log out
+              </button>
             </div>
           )}
         </div>

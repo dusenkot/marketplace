@@ -20,6 +20,7 @@ function Routes(){
       <Route path='/wallet' element={<PaymentWrapper />}/>
       <Route path='/home' element={<Home />}/>
       <Route path='/profile2' element={ <Profile2 />}/>
+      <Route path='http://localhost/login-register/registration.php#'/>
     </RouterRoutes>
     </BrowserRouter>
 
