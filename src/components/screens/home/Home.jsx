@@ -121,6 +121,7 @@ const styles = {
   name: {
     fontSize: '24px',
     marginBottom: '10px',
+    color: '#fff',
   },
   description: {
     marginBottom: '10px',
