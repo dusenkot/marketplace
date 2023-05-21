@@ -1,4 +1,5 @@
 import React from 'react';
+import App from '../home/form-send/forms-sends';
 
 class PaymentWrapper extends React.Component {
   constructor(props) {
@@ -28,6 +29,7 @@ class PaymentWrapper extends React.Component {
   render() {
     return (
       <div style={styles.main}>
+        <App />
         <h2 style={styles.heading}>Payment System</h2>
         <form onSubmit={this.handleSubmit}>
           <label style={styles.label}>
