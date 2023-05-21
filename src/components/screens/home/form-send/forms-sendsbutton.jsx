@@ -105,11 +105,42 @@ const App1 = () => {
 
   return (
     <div>
-      <button onClick={openModal}>Open Modal</button>
-      {isModalOpen && <div style={{ position: 'fixed', top: 0, left: 0, width: '100%', height: '100%', backgroundColor: 'rgba(0, 0, 0, 0.5)', zIndex: 999 }}></div>}
+      {isModalOpen && (
+        <div
+          style={{
+            position: 'fixed',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            backgroundColor: 'rgba(0, 0, 0, 0.5)',
+            zIndex: 999,
+          }}
+        ></div>
+      )}
       <Modal isOpen={isModalOpen} onClose={closeModal} />
+      <button
+        style={{
+          position: 'fixed',
+          bottom: '20px',
+          right: '20px',
+          borderRadius: '50%',
+          width: '50px',
+          height: '50px',
+          backgroundColor: 'blue',
+          color: 'white',
+          border: 'none',
+          cursor: 'pointer',
+          fontSize: '24px',
+          fontWeight: 'bold',
+        }}
+        onClick={openModal}
+      >
+        +
+      </button>
     </div>
   );
 };
+
 
 export default App1;
