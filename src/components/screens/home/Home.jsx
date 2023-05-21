@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useNavigate  } from 'react-router-dom';
 import App from './form-send/forms-sends';
 import App1 from './form-send/forms-sendsbutton';
-import backgroundImage from './form-send/star.jpg';
+import backgroundImage from './form-send/hueta6.jpg';
 import Footer from './form-send/footer.jsx';
 
 

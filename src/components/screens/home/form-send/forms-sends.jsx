@@ -49,13 +49,13 @@ const styles = {
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'space-between',
-    backgroundColor: '#14FFF7',
+    backgroundColor: '#000',
     padding: '10px',
-    borderRadius: '20px',
   },
   left: {},
   logo: {
-    height: '60px',
+    marginLeft: '80px',
+    height: '70px',
     width: 'auto',
   },
   middle: {
@@ -64,11 +64,12 @@ const styles = {
   },
   dropdownContainer: {
     position: 'relative',
+  
   },
   button: {
     height: '60px',
     fontSize: '30px',
-    margin: '0 50px',
+    margin: '0',
     padding: '8px 16px',
     background: 'transparent',
     color: '#ffffff',
@@ -83,8 +84,8 @@ const styles = {
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'flex-end',
-    backgroundColor: '#14FFF7',
-    borderRadius: '3px',
+    backgroundColor: '#000',
+    borderRadius: '15px',
     padding: '8px',
     boxShadow: '0px 2px 4px rgba(0, 0, 0, 0.2)',
   },
