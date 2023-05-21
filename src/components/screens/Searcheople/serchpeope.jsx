@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import App from '../home/form-send/forms-sends';
-import logot from './pp.png';
+import Footer from '../home/form-send/footer';
+import backgroundImage from './hueta6_2.jpg';
 
 const peopleData = [
   { id: 1, name: 'Ivan', age: 3 },
@@ -42,12 +43,16 @@ const SearchPeople = () => {
     : searchResults;
 
   return (
-    <div style={styles.body}>
+    <div style={{ backgroundImage: `url(${backgroundImage})`,
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+    width: '100%',
+    height:'800px',}}>
       <div style={styles.middle}>
         <App />
       </div>
       <p style={styles.search}>
-        <img src={logot} style={styles.logot} alt="logo" />
+        
         <div style={styles.div1}>Search</div>
       </p>
       <p>Find your future partner</p>
@@ -83,16 +88,12 @@ const SearchPeople = () => {
       ) : (
         <p>No results found</p>
       )}
+      
     </div>
   );
 };
 
 const styles = {
-  body: {
-    background: '#4040ff',
-    minHeight: '100vh',
-    textAlign: 'center',
-  },
   div1: {
     marginTop: '0px',
     fontSize: '40px',
