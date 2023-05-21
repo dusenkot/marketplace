@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import App from './form-send/forms-sends';
+import backgroundImage from './form-send/star.jpg';
 
 const SellerProfile = ({ name, email, phone }) => {
   return (
@@ -73,7 +74,10 @@ const StartupIdeas = () => {
   };
 
   return (
-    <div style={styles.background}>
+    <div style={{ backgroundImage: `url(${backgroundImage})`,
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+    width: '100%',}}>
       <App />
       {ideas.map((idea, index) => (
         <div key={index} style={styles.idea}>
@@ -116,12 +120,9 @@ const StartupIdeas = () => {
 
 
 const styles = {
-  background: {
-    background: 'linear-gradient(to bottom right, #005c98, #005c98 0%, #003261 0%, #005c98 75%)',
-    minHeight: '100vh',
-  },
+
   idea: {
-    backgroundColor: '#0FE0EB',
+    backgroundColor: 'rgba(255,255,255,0.25)',
     color: '#ffffff',
     padding: '20px',
     marginBottom: '10px',
