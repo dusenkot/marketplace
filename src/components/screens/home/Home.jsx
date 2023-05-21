@@ -1,18 +1,14 @@
 import React, { useState } from 'react';
+import { useNavigate  } from 'react-router-dom';
 import App from './form-send/forms-sends';
+import App1 from './form-send/forms-sendsbutton';
+import backgroundImage from './form-send/star.jpg';
+import Footer from './form-send/footer.jsx';
 
-const SellerProfile = ({ name, email, phone }) => {
-  return (
-    <div style={styles.profile}>
-      <h2>{name}</h2>
-      <p>Email: {email}</p>
-      <p>Phone: {phone}</p>
-    </div>
-  );
-};
+
 const StartupIdeas = () => {
   const [selectedIdea, setSelectedIdea] = useState(null);
-  const [selectedSeller, setSelectedSeller] = useState(null);
+  const navigateTo = useNavigate()
 
   const ideas = [
     {name: 'EcoSwap',
@@ -73,8 +69,12 @@ const StartupIdeas = () => {
   };
 
   return (
-    <div style={styles.background}>
+    <div style={{ backgroundImage: `url(${backgroundImage})`,
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+    width: '100%',}}>
       <App />
+      <App1 />
       {ideas.map((idea, index) => (
         <div key={index} style={styles.idea}>
           <h2 style={styles.name}>{idea.name}</h2>
@@ -95,33 +95,21 @@ const StartupIdeas = () => {
             <p style={styles.createDate}>Created: {selectedIdea.createDate}</p>
             <p style={styles.endUserPrice}>End User Price: {selectedIdea.endUserPrice}</p>
             <p style={styles.estimatedFinishDate}>Estimated Finish Date: {selectedIdea.estimatedFinishDate}</p>
-            <button style={styles.contactButton} onClick={() => openProfile(selectedIdea.team)}>Contact Seller</button>
+            <button style={styles.button}><span onClick={() => navigateTo('/profile2')}>Contact</span></button>
           </div>
         </div>
       )}
-
-      {selectedSeller && (
-        <div style={styles.modal}>
-          <div style={styles.modalContent}>
-            <span style={styles.closeButton} onClick={closeDescription}>
-              &times;
-            </span>
-            <SellerProfile {...selectedSeller} />
-          </div>
-        </div>
-      )}
+    <Footer />
     </div>
-  );
+    
+);
 };
 
 
 const styles = {
-  background: {
-    background: 'linear-gradient(to bottom right, #005c98, #005c98 0%, #003261 0%, #005c98 75%)',
-    minHeight: '100vh',
-  },
+
   idea: {
-    backgroundColor: '#0FE0EB',
+    backgroundColor: 'rgba(255,255,255,0.25)',
     color: '#ffffff',
     padding: '20px',
     marginBottom: '10px',
