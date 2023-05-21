@@ -25,72 +25,82 @@ const Modal = ({ isOpen, onClose }) => {
     <div style={{ position: 'fixed', top: 0, left: 0, width: '100%', height: '100%', backgroundColor: 'rgba(0, 0, 0, 0.5)', zIndex: 9999, display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
       <div style={{ backgroundColor: 'white', padding: 20, borderRadius: 4, boxShadow: '0 2px 4px rgba(0, 0, 0, 0.2)', position: 'relative' }}>
         <div style={{ maxWidth: 400 }}>
-          <span style={{ position: 'absolute', top: 10, right: 10, cursor: 'pointer' }} onClick={onClose}>
+          <span style={{ position: 'absolute', top: 10, right: 10, cursor: 'pointer', fontSize: 24, color: '#aaa' }} onClick={onClose}>
             &times;
           </span>
           <form onSubmit={handleSubmit}>
-            <label>
+            <label style={{ marginBottom: 10 }}>
               Name:
               <input
                 type="text"
                 value={name}
                 onChange={(e) => setName(e.target.value)}
+                style={{ width: '100%', padding: 5 }}
               />
             </label>
-            <label>
+            <label style={{ marginBottom: 10 }}>
               Description:
               <textarea
                 value={description}
                 onChange={(e) => setDescription(e.target.value)}
+                style={{ width: '100%', padding: 5 }}
               ></textarea>
             </label>
-            <label>
+            <label style={{ marginBottom: 10 }}>
               Short Description:
               <input
                 type="text"
                 value={shortDescription}
                 onChange={(e) => setShortDescription(e.target.value)}
+                style={{ width: '100%', padding: 5 }}
               />
             </label>
-            <label>
+            <label style={{ marginBottom: 10 }}>
               Team:
               <input
                 type="text"
                 value={team}
                 onChange={(e) => setTeam(e.target.value)}
+                style={{ width: '100%', padding: 5 }}
               />
             </label>
-            <label>
+            <label style={{ marginBottom: 10 }}>
               Create Date:
               <input
                 type="text"
                 value={createDate}
                 onChange={(e) => setCreateDate(e.target.value)}
+                style={{ width: '100%', padding: 5 }}
               />
             </label>
-            <label>
+            <label style={{ marginBottom: 10 }}>
               End User Price:
               <input
                 type="text"
                 value={endUserPrice}
                 onChange={(e) => setEndUserPrice(e.target.value)}
+                style={{ width: '100%', padding: 5 }}
               />
             </label>
-            <label>
+            <label style={{ marginBottom: 10 }}>
               Estimated Finish Date:
               <input
                 type="text"
                 value={estimatedFinishDate}
                 onChange={(e) => setEstimatedFinishDate(e.target.value)}
+                style={{ width: '100%', padding: 5 }}
               />
             </label>
-            <button type="submit">Submit</button>
+            <button type="submit" style={{ backgroundColor: 'blue', color: 'white', padding: '8px 16px', border: 'none', borderRadius: 4 }}>
+              Submit
+            </button>
           </form>
         </div>
       </div>
     </div>
   );
 };
+
 
 const App1 = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
