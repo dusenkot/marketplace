@@ -50,6 +50,7 @@ button: {
   border: 'none',
   borderRadius: '3px',
   cursor: 'pointer',
+  
 },
 
 };
