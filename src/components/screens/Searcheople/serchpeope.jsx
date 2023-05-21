@@ -3,11 +3,11 @@ import App from '../home/form-send/forms-sends';
 import logot from './pp.png';
 
 const peopleData = [
-  { id: 1, name: 'Ivan', age: 25 },
-  { id: 2, name: 'Maria', age: 30 },
-  { id: 3, name: 'Pitro', age: 35 },
-  { id: 4, name: 'Oksana', age: 28 },
-  { id: 5, name: 'Andrzej', age: 32 },
+  { id: 1, name: 'Ivan', age: 3 },
+  { id: 2, name: 'Maria', age: 5 },
+  { id: 3, name: 'Pitro', age: 20 },
+  { id: 4, name: 'Oksana', age: 7 },
+  { id: 5, name: 'Andrzej', age: 1 },
 ];
 
 const SearchPeople = () => {
@@ -64,19 +64,19 @@ const SearchPeople = () => {
           value={filterByAge}
           onChange={handleFilterByAge}
         >
-          <option value="">All ages</option>
-          <option value="25">25 years</option>
-          <option value="28">28 years</option>
-          <option value="30">30 years</option>
-          <option value="32">32 years</option>
-          <option value="35">35 years</option>
+          <option value="">All work experience</option>
+          <option value="3">3 years  work experience</option>
+          <option value="5">5 years  work experience</option>
+          <option value="20">20 years work experience</option>
+          <option value="7"> 7 years  work experience</option>
+          <option value="1"> 1 years  work experience</option>
         </select>
       </div>
       {filteredResults.length > 0 ? (
         <ul style={styles.ul}>
           {filteredResults.map((person) => (
             <li key={person.id}>
-              {person.name} - {person.age} years old
+              {person.name} - {person.age} work experience
             </li>
           ))}
         </ul>
