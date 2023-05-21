@@ -48,7 +48,7 @@ const SearchPeople = () => {
     backgroundPosition: 'center',
     width: '100%',
     height:'800px',
-    color:'white'}}>
+    color:'white',}}>
       <App />
       <div style={styles.filters}>
         
