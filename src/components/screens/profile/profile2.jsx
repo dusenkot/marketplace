@@ -3,7 +3,7 @@ import style from './profile.css';
 import image from './pic.png';
 import image2 from './default.jpg';
 import App from '../home/form-send/forms-sends';
-import backgroundImage from './hueta6_1.jpg';
+import backgroundImage from './sky1.jpg';
 
 function Bound() {
   const inputRef = useRef(null);
