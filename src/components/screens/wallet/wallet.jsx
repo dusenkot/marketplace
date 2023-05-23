@@ -1,6 +1,6 @@
 import React from 'react';
 import App from '../home/form-send/forms-sends';
-import backgroundImage from './hueta6_3.jpg';
+import backgroundImage from './sky3.jpg';
 class PaymentWrapper extends React.Component {
   constructor(props) {
     super(props);

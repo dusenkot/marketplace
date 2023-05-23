@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import App from '../home/form-send/forms-sends';
 
-import backgroundImage from './hueta6_2.jpg';
+import backgroundImage from './sky2.jpg';
 
 const peopleData = [
   { id: 1, name: 'Ivan', age: 3 },
